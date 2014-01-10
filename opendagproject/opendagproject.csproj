@@ -85,8 +85,8 @@
     </Compile>
     <Compile Include="Game\Particles\Particle.cs" />
     <Compile Include="Game\Particles\ParticleHandler.cs" />
-    <Compile Include="Game\Particles\PathFinding\Path.cs" />
-    <Compile Include="Game\Particles\PathFinding\PathFinding.cs" />
+    <Compile Include="Game\PathFinding\Path.cs" />
+    <Compile Include="Game\PathFinding\PathFinding.cs" />
     <Compile Include="Game\Player\Inventory\Inventory.cs" />
     <Compile Include="Game\Player\Inventory\InventoryHandler.cs" />
     <Compile Include="Game\Player\Inventory\InventoryItem.cs" />

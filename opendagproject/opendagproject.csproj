@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37A777F2-48D7-446B-A649-38E0B30B5099}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>opendagproject</RootNamespace>
+    <AssemblyName>opendagproject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Pencil.Gaming, Version=1.0.4938.30178, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Pencil.Gaming.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Content\ContentManager.cs" />
+    <Compile Include="Content\ContentReference.cs" />
+    <Compile Include="Content\Sound.cs" />
+    <Compile Include="Content\SoundManager.cs" />
+    <Compile Include="Content\Sprite.cs" />
+    <Compile Include="Content\Texture.cs" />
+    <Compile Include="Debug.cs" />
+    <Compile Include="ExceptionHandler.cs" />
+    <Compile Include="Game\Graphics\Font\FontManager.cs" />
+    <Compile Include="Game\Graphics\Lighting\Light.cs" />
+    <Compile Include="Game\Graphics\Lighting\LightHandler.cs" />
+    <Compile Include="Game\Input\KeyConfig.cs" />
+    <Compile Include="Game\Mapeditor\AddContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Mapeditor\AddContainer.Designer.cs">
+      <DependentUpon>AddContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Mapeditor\AddLight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Mapeditor\AddLight.Designer.cs">
+      <DependentUpon>AddLight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Mapeditor\AddNpc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Mapeditor\AddNpc.Designer.cs">
+      <DependentUpon>AddNpc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Mapeditor\UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Mapeditor\UI.Designer.cs">
+      <DependentUpon>UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Particles\Particle.cs" />
+    <Compile Include="Game\Particles\ParticleHandler.cs" />
+    <Compile Include="Game\Particles\PathFinding\Path.cs" />
+    <Compile Include="Game\Particles\PathFinding\PathFinding.cs" />
+    <Compile Include="Game\Player\Inventory\Inventory.cs" />
+    <Compile Include="Game\Player\Inventory\InventoryHandler.cs" />
+    <Compile Include="Game\Player\Inventory\InventoryItem.cs" />
+    <Compile Include="Game\RSL\Actors\Actor.cs" />
+    <Compile Include="Game\RSL\Actors\ActorHandler.cs" />
+    <Compile Include="Game\GameUtils.cs" />
+    <Compile Include="Game\Graphics\Graphics.cs" />
+    <Compile Include="Game\Input\InputManager.cs" />
+    <Compile Include="Game\Loader.cs" />
+    <Compile Include="Game\Mapeditor\Mapeditor.cs" />
+    <Compile Include="Game\Player\Player.cs" />
+    <Compile Include="Game\Player\PlayerHandler.cs" />
+    <Compile Include="Game\RSL\Quests\Quest.cs" />
+    <Compile Include="Game\RSL\Quests\QuestHandler.cs" />
+    <Compile Include="Game\RSL\Actors\Dialogue\Dialogue.cs" />
+    <Compile Include="Game\RSL\Actors\Dialogue\DialogueHandler.cs" />
+    <Compile Include="Game\RSL\Functions\Function.cs" />
+    <Compile Include="Game\RSL\Functions\FunctionHandler.cs" />
+    <Compile Include="Game\RSL\Actors\Npc\Npc.cs" />
+    <Compile Include="Game\RSL\Actors\Npc\NpcHandler.cs" />
+    <Compile Include="Game\RSL\RSL IDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\RSL\RSL IDE.Designer.cs">
+      <DependentUpon>RSL IDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\RSL\RSLHandler.cs" />
+    <Compile Include="Game\RSL\Script.cs" />
+    <Compile Include="Game\RSL\Variable.cs" />
+    <Compile Include="Game\Saver\GameSaver.cs" />
+    <Compile Include="Game\States\GameplayState.cs" />
+    <Compile Include="Game\States\GameState.cs" />
+    <Compile Include="Game\States\GameStateManager.cs" />
+    <Compile Include="Game\States\MapeditorState.cs" />
+    <Compile Include="Game\Tick\GameTick.cs" />
+    <Compile Include="Game\World\Container.cs" />
+    <Compile Include="Game\World\Tile.cs" />
+    <Compile Include="Game\World\WorldManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Game\RSL\Actors\Item\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Game\Mapeditor\AddContainer.resx">
+      <DependentUpon>AddContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\Mapeditor\AddLight.resx">
+      <DependentUpon>AddLight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\Mapeditor\AddNpc.resx">
+      <DependentUpon>AddNpc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\Mapeditor\UI.resx">
+      <DependentUpon>UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\RSL\RSL IDE.resx">
+      <DependentUpon>RSL IDE.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Misc\TODO.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,35 @@
+﻿
+
+TODO:
+
+
+TECH:
+- Chunkloading
+- Particle system
+- Optimized raycaster
+- Ditch LINQ .Foreach() <- but it is so handy
+- Ditch LINQ .ToList() 
+- Save file <- 
+- Grid scaling across
+different resolutions
+- Path finding optimization
+(mutliplayer)
+----------------------------
+| IF BLOCKS IN FUNCTIONS!! |
+----------------------------
+
+MECHANICS:
+- Ranged combat (particles)
+& npcs
+- Quests
+- Containers
+
+GAMEPLAY:
+- Smoothen movement
+- Fix frame latency
+collision errors
+
+
+NOTE:
+
+Camera position is negative
